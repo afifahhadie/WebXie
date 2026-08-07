@@ -23,7 +23,7 @@ export const SERVICES: Service[] = [
     name: "Sistem Custom",
     priceLabel: "Sesuai konsultasi",
     priceNote:
-      "Scope sangat variatif, dari CRUD sederhana sampai integrasi AI — kami scoping dulu bareng kamu sebelum bicara harga.",
+      "Scope sangat variatif, dari fitur simpel sampai integrasi AI — kami bahas dulu kebutuhannya bareng kamu sebelum bicara harga.",
     description:
       "Sistem/aplikasi web yang dibangun sesuai kebutuhan spesifik bisnis kamu — dari tools internal sampai produk digital custom.",
     ctaLabel: "Diskusikan Kebutuhan",
