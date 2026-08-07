@@ -73,7 +73,7 @@ export default function ProductsPage() {
             rel="noopener noreferrer"
             className="inline-flex rounded-full bg-blue-500 hover:bg-blue-400 transition-colors px-8 py-3 font-semibold"
           >
-            Lihat Semua Produk di Lynk.id
+            Lihat Semua Produk
           </a>
         </div>
       </section>
