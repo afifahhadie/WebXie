@@ -15,16 +15,13 @@ export function Footer() {
     <footer className="border-t border-navy-700 bg-navy-900">
       <div className="mx-auto max-w-6xl px-6 py-12 grid gap-8 md:grid-cols-3">
         <div>
-          <div className="flex items-center gap-2">
-            <Image
-              src="/images/logo.jpeg"
-              alt="WebXie"
-              width={32}
-              height={32}
-              className="rounded"
-            />
-            <span className="font-display font-bold">WebXie</span>
-          </div>
+          <Image
+            src="/images/logo-full.png"
+            alt="WebXie"
+            width={187}
+            height={65}
+            className="h-8 w-auto"
+          />
           <p className="mt-3 text-sm text-ivory-dim">
             Innovative Web Solutions untuk UMKM Indonesia.
           </p>

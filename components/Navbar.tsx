@@ -33,18 +33,14 @@ export function Navbar() {
       }`}
     >
       <nav className="mx-auto max-w-6xl px-6 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2">
+        <Link href="/" className="flex items-center">
           <Image
-            src="/images/logo.jpeg"
+            src="/images/logo-full.png"
             alt="WebXie"
-            width={36}
-            height={36}
-            className="rounded"
+            width={187}
+            height={65}
+            className="h-9 w-auto"
           />
-          <span className="font-display font-bold text-lg">
-            Web<span className="text-blue-400">X</span>
-            <span className="text-blue-400">i</span>e
-          </span>
         </Link>
 
         <ul className="hidden md:flex items-center gap-8 text-sm text-ivory-dim">

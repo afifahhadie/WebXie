@@ -19,7 +19,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "WebXie — Innovative Web Solutions",
+  title: "WebXie | Jasa Pembuatan Website Profesional untuk UMKM Naik Kelas",
   description:
     "Jasa pembuatan website Company Profile dan Sistem Custom untuk UMKM di Indonesia. Berbasis Tangerang Selatan.",
 };
