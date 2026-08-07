@@ -17,20 +17,24 @@ export function Hero() {
     registerGsap();
     if (reduced) return;
 
-    const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
-    if (headlineRef.current) {
-      tl.from(
-        headlineRef.current.querySelectorAll("[data-word]"),
-        { y: 40, opacity: 0, duration: 0.7, stagger: 0.08 },
-        0
-      );
-    }
-    if (subRef.current) {
-      tl.from(subRef.current, { y: 20, opacity: 0, duration: 0.6 }, 0.4);
-    }
-    if (ctaRef.current) {
-      tl.from(ctaRef.current, { y: 20, opacity: 0, duration: 0.6 }, 0.55);
-    }
+    const ctx = gsap.context(() => {
+      const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
+      if (headlineRef.current) {
+        tl.from(
+          headlineRef.current.querySelectorAll("[data-word]"),
+          { y: 40, opacity: 0, duration: 0.7, stagger: 0.08 },
+          0
+        );
+      }
+      if (subRef.current) {
+        tl.from(subRef.current, { y: 20, opacity: 0, duration: 0.6 }, 0.4);
+      }
+      if (ctaRef.current) {
+        tl.from(ctaRef.current, { y: 20, opacity: 0, duration: 0.6 }, 0.55);
+      }
+    });
+
+    return () => ctx.revert();
   }, [reduced]);
 
   const headline = "Website Profesional untuk UMKM Naik Kelas";
