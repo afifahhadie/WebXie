@@ -1,51 +1,4 @@
-"use client";
-
-import { useEffect, useRef, useState } from "react";
-import { gsap, registerGsap, ScrollTrigger } from "@/lib/gsap";
-import { useReducedMotion } from "@/lib/reduced-motion";
 import { ScrollReveal } from "./ScrollReveal";
-
-function StatCounter({ target, label }: { target: number; label: string }) {
-  const ref = useRef<HTMLSpanElement>(null);
-  const [value, setValue] = useState(0);
-  const reduced = useReducedMotion();
-
-  useEffect(() => {
-    registerGsap();
-    if (!ref.current) return;
-
-    if (reduced) {
-      setValue(target);
-      return;
-    }
-
-    const counter = { n: 0 };
-    const st = ScrollTrigger.create({
-      trigger: ref.current,
-      start: "top 90%",
-      once: true,
-      onEnter: () => {
-        gsap.to(counter, {
-          n: target,
-          duration: 1.2,
-          ease: "power2.out",
-          onUpdate: () => setValue(Math.round(counter.n)),
-        });
-      },
-    });
-
-    return () => st.kill();
-  }, [reduced, target]);
-
-  return (
-    <div className="text-center">
-      <span ref={ref} className="block font-display text-4xl font-bold text-blue-300">
-        {value}
-      </span>
-      <span className="text-sm text-ivory-dim">{label}</span>
-    </div>
-  );
-}
 
 export function About() {
   return (
@@ -65,11 +18,6 @@ export function About() {
             teknis yang membingungkan.
           </p>
         </ScrollReveal>
-        <div className="mt-10 grid grid-cols-3 gap-6">
-          <StatCounter target={2} label="Kategori Layanan" />
-          <StatCounter target={3} label="Project Rampung" />
-          <StatCounter target={1} label="Berbasis Tangerang Selatan" />
-        </div>
       </div>
     </section>
   );
