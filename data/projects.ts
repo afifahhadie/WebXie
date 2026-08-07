@@ -22,7 +22,7 @@ export const PROJECTS: Project[] = [
     industry: "F&B (kedai kopi)",
     description:
       "Company profile untuk kedai kopi lokal di Tangerang — tema hangat, ramah, dan mudah ditemukan calon pelanggan.",
-    link: "https://github.com/afifahhadie/kopi-4mata",
+    link: "https://afifahhadie.github.io/kopi-4mata/",
     screenshot: "/images/projects/kopi-4-mata.png",
   },
   {
