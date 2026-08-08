@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Space_Grotesk, Inter } from "next/font/google";
 import "./globals.css";
-import { Navbar } from "@/components/Navbar";
+import { TubelightNavbar } from "@/components/tubelight-navbar";
 import { Footer } from "@/components/Footer";
 import { WhatsAppBubble } from "@/components/WhatsAppBubble";
 
@@ -33,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="id" className={`${spaceGrotesk.variable} ${inter.variable}`}>
       <body className="bg-navy-950 text-ivory font-body antialiased">
-        <Navbar />
+        <TubelightNavbar />
         <main className="pt-20">{children}</main>
         <Footer />
         <WhatsAppBubble />
