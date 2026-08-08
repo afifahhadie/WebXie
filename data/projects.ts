@@ -41,7 +41,7 @@ export const PROJECTS: Project[] = [
     category: "Sistem Custom",
     industry: "Pet-tech / consumer, AI & Computer Vision",
     description:
-      "Web app yang menganalisis foto pasir kucing (via Computer Vision) untuk memberi estimasi awal kondisi pH urine kucing — indikasi dini masalah saluran kemih/ginjal, dilakukan sendiri di rumah.",
+      "Web app yang menganalisis foto pasir kucing (via Computer Vision) untuk memberi estimasi awal kondisi pH urine kucing — indikasi dini masalah saluran kemih/ginjal.",
     link: "https://felyhart-ph-detector-v2.vercel.app",
     screenshot: "/images/projects/felyhart-ph-detector.png",
     techDetail: {
