@@ -10,7 +10,7 @@ export interface Project {
     flow: string;
     validation: string;
     stack: string[];
-    scope: string;
+    scope?: string;
   };
 }
 
@@ -37,7 +37,7 @@ export const PROJECTS: Project[] = [
   },
   {
     slug: "felyhart-ph-detector",
-    name: "Felyhart pH Detector",
+    name: "pH Detector Urine Kucing",
     category: "Sistem Custom",
     industry: "Pet-tech / consumer, AI & Computer Vision",
     description:
@@ -56,8 +56,6 @@ export const PROJECTS: Project[] = [
         "Claude API Haiku (validasi foto)",
         "UptimeRobot (uptime backend)",
       ],
-      scope:
-        "Bukan sistem monitoring kontinu. Ini adalah analisis per-sesi, tanpa dashboard monitoring, input sensor, atau laporan otomatis berkala.",
     },
   },
 ];
