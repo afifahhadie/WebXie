@@ -16,7 +16,7 @@ export const SERVICES: Service[] = [
       "Harga final menyesuaikan jumlah halaman, kompleksitas desain, dan fitur tambahan, yang akan dibahas saat konsultasi.",
     description:
       "Website profil bisnis yang membangun kepercayaan calon pelanggan, cocok untuk UMKM yang ingin tampil profesional dan mudah ditemukan secara daring.",
-    ctaLabel: "Konsultasi Gratis",
+    ctaLabel: "Free Consultation",
   },
   {
     slug: "sistem-custom",

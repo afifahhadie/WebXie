@@ -16,7 +16,7 @@ export function CtaBand() {
           akan membantu menemukan solusi yang paling sesuai.
         </p>
         <LiquidLinkButton href="/contact" className="mt-8">
-          Konsultasi Gratis Sekarang
+          Free Consultation Sekarang
           <ArrowRight className="size-4" aria-hidden="true" />
         </LiquidLinkButton>
       </ScrollReveal>

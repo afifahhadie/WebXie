@@ -56,7 +56,7 @@ export function Navbar() {
 
         <div className="hidden md:block">
           <LiquidLinkButton href="/contact" className="h-10 px-5">
-            Konsultasi Gratis
+                Free Consultation
           </LiquidLinkButton>
         </div>
 
@@ -96,7 +96,7 @@ export function Navbar() {
                 className="h-10 px-5"
                 onClick={() => setOpen(false)}
               >
-                Konsultasi Gratis
+            Free Consultation
               </LiquidLinkButton>
             </li>
           </ul>

@@ -66,7 +66,7 @@ export function Hero() {
           </p>
           <div ref={ctaRef} className="mt-8 flex flex-wrap gap-4">
             <LiquidLinkButton href="/contact">
-              Konsultasi Gratis
+              Free Consultation
               <ArrowRight className="size-4" aria-hidden="true" />
             </LiquidLinkButton>
             <Link
