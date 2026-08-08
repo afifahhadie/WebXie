@@ -32,6 +32,9 @@ export default defineConfig([
         HTMLButtonElement: "readonly",
         HTMLAnchorElement: "readonly",
         ScrollTrigger: "readonly",
+        performance: "readonly",
+        requestAnimationFrame: "readonly",
+        cancelAnimationFrame: "readonly",
       },
     },
     plugins: {
