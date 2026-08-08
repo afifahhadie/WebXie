@@ -3,7 +3,7 @@ import { ScrollReveal } from "./ScrollReveal";
 
 const VALUE_PROPS = [
   { title: "Cepat & Transparan", desc: "Proses kerja jelas dari awal, tanpa kejutan biaya di tengah jalan." },
-  { title: "Bahasa Gampang Dimengerti", desc: "Kami jelaskan semuanya tanpa jargon teknis yang membingungkan." },
+  { title: "Penjelasan Mudah Paham", desc: "Kami jelaskan semuanya tanpa jargon teknis yang membingungkan." },
   { title: "Harga Masuk Akal", desc: "Investasi yang sepadan untuk UMKM, mulai dari kebutuhan dasar." },
   { title: "Sederhana sampai Custom", desc: "Dari company profile simpel sampai sistem custom kompleks, kami siap." },
 ];
