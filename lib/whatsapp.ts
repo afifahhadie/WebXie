@@ -26,7 +26,8 @@ export function validateConsultationForm(
   return errors;
 }
 
-const WHATSAPP_NUMBER = "6282295298663";
+export const WHATSAPP_NUMBER = "6282295298663";
+export const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMBER}`;
 
 export function buildWhatsAppUrl(data: ConsultationFormData): string {
   const message = [

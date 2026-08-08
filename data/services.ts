@@ -13,9 +13,9 @@ export const SERVICES: Service[] = [
     name: "Company Profile",
     priceLabel: "Mulai dari Rp 1.000.000",
     priceNote:
-      "Harga final menyesuaikan jumlah halaman, kompleksitas desain, dan fitur tambahan — dibahas saat konsultasi.",
+      "Harga final menyesuaikan jumlah halaman, kompleksitas desain, dan fitur tambahan, yang akan dibahas saat konsultasi.",
     description:
-      "Website profil bisnis yang membangun kepercayaan calon pelanggan — cocok untuk UMKM yang ingin tampil profesional dan mudah ditemukan online.",
+      "Website profil bisnis yang membangun kepercayaan calon pelanggan, cocok untuk UMKM yang ingin tampil profesional dan mudah ditemukan secara daring.",
     ctaLabel: "Konsultasi Gratis",
   },
   {
@@ -23,9 +23,9 @@ export const SERVICES: Service[] = [
     name: "Sistem Custom",
     priceLabel: "Sesuai konsultasi",
     priceNote:
-      "Scope sangat variatif, dari fitur simpel sampai integrasi AI — kami bahas dulu kebutuhannya bareng kamu sebelum bicara harga.",
+      "Cakupan pekerjaan sangat bervariasi, mulai dari fitur sederhana hingga integrasi AI. Kebutuhan akan didiskusikan terlebih dahulu bersama Anda sebelum membahas harga.",
     description:
-      "Sistem/aplikasi web yang dibangun sesuai kebutuhan spesifik bisnis kamu — dari tools internal sampai produk digital custom.",
+      "Sistem atau aplikasi web yang dibangun sesuai kebutuhan spesifik bisnis Anda, mulai dari tools internal hingga produk digital custom.",
     ctaLabel: "Diskusikan Kebutuhan",
   },
 ];

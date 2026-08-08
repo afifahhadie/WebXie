@@ -58,9 +58,9 @@ export function Hero() {
             ))}
           </h1>
           <p ref={subRef} className="mt-6 text-ivory-dim text-lg max-w-xl">
-            WebXie bantu UMKM di Indonesia punya website yang bikin calon
-            pelanggan percaya — proses jelas, harga masuk akal, tanpa
-            istilah teknis yang bikin pusing.
+            WebXie membantu UMKM di Indonesia memiliki website yang
+            membangun kepercayaan calon pelanggan. Proses kerja jelas,
+            harga masuk akal, dan tanpa istilah teknis yang membingungkan.
           </p>
           <div ref={ctaRef} className="mt-8 flex flex-wrap gap-4">
             <Link

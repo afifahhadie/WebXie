@@ -1,5 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
+import { WhatsAppIcon, EmailIcon, LocationIcon } from "@/components/icons/ContactIcons";
+import { WHATSAPP_LINK } from "@/lib/whatsapp";
 
 const LINKS = [
   { href: "/", label: "Home" },
@@ -43,9 +45,22 @@ export function Footer() {
         <div>
           <p className="font-display text-sm text-blue-300 mb-3">Kontak</p>
           <ul className="space-y-2 text-sm text-ivory-dim">
-            <li>WhatsApp: +62 822-9529-8663</li>
-            <li>Email: webxie.jasawebsite@gmail.com</li>
-            <li>Tangerang Selatan, Banten</li>
+            <li className="flex items-center gap-2">
+              <WhatsAppIcon className="h-4 w-4 shrink-0 text-blue-300" />
+              <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="hover:text-ivory">
+                +62 822-9529-8663
+              </a>
+            </li>
+            <li className="flex items-center gap-2">
+              <EmailIcon className="h-4 w-4 shrink-0 text-blue-300" />
+              <a href="mailto:webxie.jasawebsite@gmail.com" className="hover:text-ivory">
+                webxie.jasawebsite@gmail.com
+              </a>
+            </li>
+            <li className="flex items-center gap-2">
+              <LocationIcon className="h-4 w-4 shrink-0 text-blue-300" />
+              Tangerang Selatan, Banten
+            </li>
           </ul>
         </div>
       </div>

@@ -3,6 +3,7 @@ import { Space_Grotesk, Inter } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { WhatsAppBubble } from "@/components/WhatsAppBubble";
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -35,6 +36,7 @@ export default function RootLayout({
         <Navbar />
         <main className="pt-20">{children}</main>
         <Footer />
+        <WhatsAppBubble />
       </body>
     </html>
   );

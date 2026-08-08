@@ -12,10 +12,10 @@ export function About() {
             Partner Digital untuk UMKM yang Serius Naik Kelas
           </h2>
           <p className="mt-4 text-ivory-dim">
-            WebXie adalah jasa web development yang fokus melayani UMKM di
-            Indonesia — dari company profile sampai sistem custom, kami
-            bantu bisnis kamu tampil profesional secara online tanpa bahasa
-            teknis yang membingungkan.
+            WebXie adalah penyedia jasa pengembangan website yang berfokus
+            melayani UMKM di Indonesia. Mulai dari company profile hingga
+            sistem custom, kami membantu bisnis Anda tampil profesional
+            secara online tanpa istilah teknis yang membingungkan.
           </p>
         </ScrollReveal>
       </div>

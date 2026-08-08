@@ -14,9 +14,9 @@ export async function generateMetadata({
 }) {
   try {
     const { meta } = getPostBySlug(params.slug);
-    return { title: `${meta.title} — WebXie Blog`, description: meta.excerpt };
+    return { title: `${meta.title} | WebXie Blog`, description: meta.excerpt };
   } catch {
-    return { title: "Artikel Tidak Ditemukan — WebXie Blog" };
+    return { title: "Artikel Tidak Ditemukan | WebXie Blog" };
   }
 }
 

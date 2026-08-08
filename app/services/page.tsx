@@ -5,7 +5,7 @@ import { ProcessTimeline } from "@/components/services/ProcessTimeline";
 import { HexagonGrid } from "@/components/HexagonGrid";
 
 export const metadata = {
-  title: "Services — WebXie",
+  title: "Services | WebXie",
   description:
     "Layanan Company Profile dan Sistem Custom dari WebXie untuk UMKM Indonesia.",
 };
@@ -23,8 +23,8 @@ export default function ServicesPage() {
             Dari Company Profile Sampai Sistem Custom
           </h1>
           <p className="mt-4 text-ivory-dim max-w-2xl mx-auto">
-            Pilih layanan yang paling sesuai kebutuhan bisnis kamu — atau
-            belum yakin? Konsultasi dulu, gratis.
+            Pilih layanan yang paling sesuai dengan kebutuhan bisnis Anda.
+            Belum yakin? Konsultasikan terlebih dahulu secara gratis.
           </p>
         </div>
       </section>

@@ -21,7 +21,7 @@ export const PROJECTS: Project[] = [
     category: "Company Profile",
     industry: "F&B (kedai kopi)",
     description:
-      "Company profile untuk kedai kopi lokal di Tangerang — tema hangat, ramah, dan mudah ditemukan calon pelanggan.",
+      "Company profile untuk kedai kopi lokal di Tangerang dengan tema hangat, ramah, dan mudah ditemukan calon pelanggan.",
     link: "https://afifahhadie.github.io/kopi-4mata/",
     screenshot: "/images/projects/kopi-4-mata.png",
   },
@@ -41,13 +41,13 @@ export const PROJECTS: Project[] = [
     category: "Sistem Custom",
     industry: "Pet-tech / consumer, AI & Computer Vision",
     description:
-      "Web app yang menganalisis foto pasir kucing (via Computer Vision) untuk memberi estimasi awal kondisi pH urine kucing — indikasi dini masalah saluran kemih/ginjal.",
+      "Web app yang menganalisis foto pasir kucing (via Computer Vision) untuk memberi estimasi awal kondisi pH urine kucing, sebagai indikasi dini masalah saluran kemih atau ginjal.",
     link: "https://felyhart-ph-detector-v2.vercel.app",
     screenshot: "/images/projects/felyhart-ph-detector.png",
     techDetail: {
       flow: "Halaman panduan foto → upload foto (kamera/galeri) → analisis warna via OpenCV, dicocokkan ke database 3 kategori pH (Asam/pink-kemerahan, Normal/ungu, Basa/biru-kehijauan) → halaman hasil (estimasi pH, kondisi, saran).",
       validation:
-        "Validasi foto pakai Claude API (Haiku) — menolak foto yang bukan pasir kucing.",
+        "Validasi foto menggunakan Claude API (Haiku), yang akan menolak foto yang bukan pasir kucing.",
       stack: [
         "Next.js (Vercel)",
         "FastAPI + OpenCV (Render)",
@@ -57,7 +57,7 @@ export const PROJECTS: Project[] = [
         "UptimeRobot (uptime backend)",
       ],
       scope:
-        "Bukan sistem monitoring kontinu — ini analisis per-sesi, tidak ada dashboard monitoring, input sensor, atau laporan otomatis berkala.",
+        "Bukan sistem monitoring kontinu. Ini adalah analisis per-sesi, tanpa dashboard monitoring, input sensor, atau laporan otomatis berkala.",
     },
   },
 ];

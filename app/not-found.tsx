@@ -11,7 +11,7 @@ export default function NotFound() {
           Halaman Tidak Ditemukan
         </h1>
         <p className="mt-3 text-ivory-dim">
-          Halaman yang kamu cari mungkin sudah dipindahkan atau tidak ada.
+          Halaman yang Anda cari mungkin sudah dipindahkan atau tidak tersedia.
         </p>
         <Link
           href="/"

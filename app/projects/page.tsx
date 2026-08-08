@@ -4,7 +4,7 @@ import { ScrollReveal } from "@/components/home/ScrollReveal";
 import { HexagonGrid } from "@/components/HexagonGrid";
 
 export const metadata = {
-  title: "Projects — WebXie",
+  title: "Projects | WebXie",
   description: "Portofolio project company profile dan sistem custom WebXie.",
 };
 
@@ -21,7 +21,7 @@ export default function ProjectsPage() {
             Hasil Kerja Kami
           </h1>
           <p className="mt-4 text-ivory-dim max-w-2xl mx-auto">
-            Klik project untuk melihat langsung hasilnya — semua link
+            Klik project untuk melihat langsung hasilnya. Setiap tautan
             mengarah ke project asli.
           </p>
         </div>

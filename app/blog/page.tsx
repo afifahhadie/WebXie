@@ -4,7 +4,7 @@ import { ScrollReveal } from "@/components/home/ScrollReveal";
 import { HexagonGrid } from "@/components/HexagonGrid";
 
 export const metadata = {
-  title: "Blog — WebXie",
+  title: "Blog | WebXie",
   description:
     "Artikel edukasi seputar digitalisasi UMKM: kenapa butuh website, tips praktis, mitos, dan tren digital.",
 };
@@ -24,8 +24,8 @@ export default function BlogPage() {
             Belajar Digitalisasi UMKM
           </h1>
           <p className="mt-4 text-ivory-dim max-w-2xl mx-auto">
-            Artikel edukasi seputar website dan digitalisasi untuk UMKM —
-            bukan promosi, murni buat bantu kamu paham.
+            Artikel edukasi seputar website dan digitalisasi untuk UMKM.
+            Bukan promosi, murni untuk membantu Anda memahami topik ini.
           </p>
         </div>
       </section>

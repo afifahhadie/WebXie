@@ -8,11 +8,11 @@ export function CtaBand() {
       <HexagonGrid />
       <ScrollReveal className="relative mx-auto max-w-3xl px-6 py-20 text-center">
         <h2 className="font-display text-3xl font-bold">
-          Siap Punya Website yang Bikin Bisnis Kamu Dipercaya?
+          Siap Memiliki Website yang Membuat Bisnis Anda Lebih Dipercaya?
         </h2>
         <p className="mt-4 text-ivory-dim">
-          Konsultasi gratis, tanpa komitmen. Ceritakan bisnis kamu, kami bantu
-          cari solusi yang paling pas.
+          Konsultasi gratis tanpa komitmen. Ceritakan bisnis Anda, dan kami
+          akan membantu menemukan solusi yang paling sesuai.
         </p>
         <Link
           href="/contact"

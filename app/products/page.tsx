@@ -3,9 +3,9 @@ import { ScrollReveal } from "@/components/home/ScrollReveal";
 import { HexagonGrid } from "@/components/HexagonGrid";
 
 export const metadata = {
-  title: "Products — WebXie",
+  title: "Products | WebXie",
   description:
-    "AI micro-tools digital dari WebXie untuk bisnis kuliner dan UMKM — praktis, terjangkau, langsung dipakai via browser.",
+    "AI micro-tools digital dari WebXie untuk bisnis kuliner dan UMKM, praktis, terjangkau, dan langsung dapat digunakan melalui browser.",
 };
 
 export default function ProductsPage() {
@@ -21,8 +21,8 @@ export default function ProductsPage() {
             AI Micro-Tools untuk Bisnis Kuliner & UMKM
           </h1>
           <p className="mt-4 text-ivory-dim max-w-2xl mx-auto">
-            Produk digital siap pakai langsung via browser — simple,
-            terjangkau, dan langsung membantu operasional bisnis kamu.
+            Produk digital siap pakai langsung melalui browser, praktis,
+            terjangkau, dan langsung membantu operasional bisnis Anda.
           </p>
         </div>
       </section>
