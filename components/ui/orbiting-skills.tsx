@@ -178,20 +178,20 @@ const OrbitingSkill = memo(({ config, angle }: OrbitingSkillProps) => {
     >
       <div
         className={`
-          relative w-full h-full p-2 bg-gray-800/50 backdrop-blur-sm
+          relative w-full h-full p-2 bg-gray-800/90 backdrop-blur-sm
           rounded-full flex items-center justify-center
           transition-all duration-300 cursor-pointer
           ${isHovered ? 'scale-125 shadow-2xl' : 'shadow-lg hover:shadow-xl'}
         `}
         style={{
           boxShadow: isHovered
-            ? `0 0 20px ${iconComponents[iconType]?.color}30, 0 0 40px ${iconComponents[iconType]?.color}15`
+            ? `0 0 30px ${iconComponents[iconType]?.color}40, 0 0 60px ${iconComponents[iconType]?.color}20`
             : undefined
         }}
       >
         <SkillIcon type={iconType} />
         {isHovered && (
-          <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 px-2 py-1 bg-gray-900/80 backdrop-blur-sm rounded text-xs text-white whitespace-nowrap pointer-events-none">
+          <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 px-2 py-1 bg-gray-900/95 backdrop-blur-sm rounded text-xs text-white whitespace-nowrap pointer-events-none">
             {label}
           </div>
         )}
@@ -204,14 +204,14 @@ OrbitingSkill.displayName = 'OrbitingSkill';
 const GlowingOrbitPath = memo(({ radius, glowColor = 'cyan', animationDelay = 0 }: GlowingOrbitPathProps) => {
   const glowColors = {
     cyan: {
-      primary: 'rgba(6, 182, 212, 0.15)',
-      secondary: 'rgba(6, 182, 212, 0.08)',
-      border: 'rgba(6, 182, 212, 0.12)'
+      primary: 'rgba(6, 182, 212, 0.4)',
+      secondary: 'rgba(6, 182, 212, 0.2)',
+      border: 'rgba(6, 182, 212, 0.3)'
     },
     purple: {
-      primary: 'rgba(147, 51, 234, 0.15)',
-      secondary: 'rgba(147, 51, 234, 0.08)',
-      border: 'rgba(147, 51, 234, 0.12)'
+      primary: 'rgba(147, 51, 234, 0.4)',
+      secondary: 'rgba(147, 51, 234, 0.2)',
+      border: 'rgba(147, 51, 234, 0.3)'
     }
   };
 
@@ -230,7 +230,7 @@ const GlowingOrbitPath = memo(({ radius, glowColor = 'cyan', animationDelay = 0 
         className="absolute inset-0 rounded-full animate-pulse"
         style={{
           background: `radial-gradient(circle, transparent 30%, ${colors.secondary} 70%, ${colors.primary} 100%)`,
-          boxShadow: `0 0 40px ${colors.primary}, inset 0 0 40px ${colors.secondary}`,
+          boxShadow: `0 0 60px ${colors.primary}, inset 0 0 60px ${colors.secondary}`,
           animation: 'pulse 4s ease-in-out infinite',
           animationDelay: `${animationDelay}s`,
         }}
@@ -240,7 +240,7 @@ const GlowingOrbitPath = memo(({ radius, glowColor = 'cyan', animationDelay = 0 
         className="absolute inset-0 rounded-full"
         style={{
           border: `1px solid ${colors.border}`,
-          boxShadow: `inset 0 0 10px ${colors.secondary}`,
+          boxShadow: `inset 0 0 20px ${colors.secondary}`,
         }}
       />
     </div>
