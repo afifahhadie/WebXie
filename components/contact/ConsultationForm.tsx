@@ -7,6 +7,7 @@ import {
   validateConsultationForm,
   buildWhatsAppUrl,
 } from "@/lib/whatsapp";
+import { LiquidButton } from "@/components/ui/liquid-button";
 
 const SERVICE_OPTIONS: ConsultationFormData["service"][] = [
   "Company Profile",
@@ -116,12 +117,9 @@ export function ConsultationForm() {
         )}
       </div>
 
-      <button
-        type="submit"
-        className="w-full rounded-full bg-blue-500 hover:bg-blue-400 transition-colors px-6 py-3 font-semibold"
-      >
+      <LiquidButton type="submit" className="w-full">
         Kirim via WhatsApp
-      </button>
+      </LiquidButton>
     </form>
   );
 }

@@ -1,8 +1,8 @@
-import Link from "next/link";
 import { SERVICES } from "@/data/services";
 import { ScrollReveal } from "@/components/home/ScrollReveal";
 import { ProcessTimeline } from "@/components/services/ProcessTimeline";
 import { HexagonGrid } from "@/components/HexagonGrid";
+import { LiquidLinkButton } from "@/components/ui/liquid-link-button";
 
 export const metadata = {
   title: "Services | WebXie",
@@ -38,12 +38,9 @@ export default function ServicesPage() {
                 <p className="mt-2 text-blue-300 font-semibold">{s.priceLabel}</p>
                 <p className="mt-1 text-xs text-ivory-dim">{s.priceNote}</p>
                 <p className="mt-4 text-ivory-dim flex-1">{s.description}</p>
-                <Link
-                  href="/contact"
-                  className="mt-6 inline-flex justify-center rounded-full bg-blue-500 hover:bg-blue-400 transition-colors px-6 py-3 font-semibold"
-                >
+                <LiquidLinkButton href="/contact" className="mt-6 justify-center">
                   {s.ctaLabel}
-                </Link>
+                </LiquidLinkButton>
               </div>
             </ScrollReveal>
           ))}

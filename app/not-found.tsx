@@ -1,5 +1,6 @@
-import Link from "next/link";
 import { HexagonGrid } from "@/components/HexagonGrid";
+import { LiquidLinkButton } from "@/components/ui/liquid-link-button";
+import { ArrowLeft } from "lucide-react";
 
 export default function NotFound() {
   return (
@@ -13,12 +14,10 @@ export default function NotFound() {
         <p className="mt-3 text-ivory-dim">
           Halaman yang Anda cari mungkin sudah dipindahkan atau tidak tersedia.
         </p>
-        <Link
-          href="/"
-          className="mt-8 inline-flex rounded-full bg-blue-500 hover:bg-blue-400 transition-colors px-6 py-3 font-semibold"
-        >
+        <LiquidLinkButton href="/" className="mt-8">
+          <ArrowLeft className="size-4" aria-hidden="true" />
           Kembali ke Home
-        </Link>
+        </LiquidLinkButton>
       </div>
     </section>
   );

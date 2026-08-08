@@ -1,4 +1,5 @@
-import Link from "next/link";
+import { LiquidLinkButton } from "@/components/ui/liquid-link-button";
+import { ArrowLeft } from "lucide-react";
 
 export default function ArticleNotFound() {
   return (
@@ -7,12 +8,10 @@ export default function ArticleNotFound() {
       <p className="mt-4 text-ivory-dim">
         Artikel yang Anda cari mungkin sudah dipindahkan atau belum tersedia.
       </p>
-      <Link
-        href="/blog"
-        className="mt-8 inline-flex rounded-full bg-blue-500 hover:bg-blue-400 transition-colors px-6 py-3 font-semibold"
-      >
+      <LiquidLinkButton href="/blog" className="mt-8">
+        <ArrowLeft className="size-4" aria-hidden="true" />
         Kembali ke Blog
-      </Link>
+      </LiquidLinkButton>
     </div>
   );
 }

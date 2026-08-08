@@ -1,6 +1,8 @@
 import { PRODUCTS, PRODUCTS_STORE_LINK } from "@/data/products";
 import { ScrollReveal } from "@/components/home/ScrollReveal";
 import { HexagonGrid } from "@/components/HexagonGrid";
+import { LiquidLinkButton } from "@/components/ui/liquid-link-button";
+import { ExternalLink } from "lucide-react";
 
 export const metadata = {
   title: "Products | WebXie",
@@ -67,14 +69,10 @@ export default function ProductsPage() {
         </div>
 
         <div className="mt-14 text-center">
-          <a
-            href={PRODUCTS_STORE_LINK}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex rounded-full bg-blue-500 hover:bg-blue-400 transition-colors px-8 py-3 font-semibold"
-          >
+          <LiquidLinkButton href={PRODUCTS_STORE_LINK} external className="inline-flex">
             Lihat Semua Produk
-          </a>
+            <ExternalLink className="size-4" aria-hidden="true" />
+          </LiquidLinkButton>
         </div>
       </section>
     </>

@@ -1,6 +1,7 @@
-import Link from "next/link";
 import { HexagonGrid } from "@/components/HexagonGrid";
 import { ScrollReveal } from "./ScrollReveal";
+import { LiquidLinkButton } from "@/components/ui/liquid-link-button";
+import { ArrowRight } from "lucide-react";
 
 export function CtaBand() {
   return (
@@ -14,12 +15,10 @@ export function CtaBand() {
           Konsultasi gratis tanpa komitmen. Ceritakan bisnis Anda, dan kami
           akan membantu menemukan solusi yang paling sesuai.
         </p>
-        <Link
-          href="/contact"
-          className="mt-8 inline-flex rounded-full bg-blue-500 hover:bg-blue-400 transition-colors px-8 py-3 font-semibold"
-        >
+        <LiquidLinkButton href="/contact" className="mt-8">
           Konsultasi Gratis Sekarang
-        </Link>
+          <ArrowRight className="size-4" aria-hidden="true" />
+        </LiquidLinkButton>
       </ScrollReveal>
     </section>
   );

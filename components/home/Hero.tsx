@@ -6,6 +6,8 @@ import { gsap, registerGsap } from "@/lib/gsap";
 import { useReducedMotion } from "@/lib/reduced-motion";
 import { HexagonGrid } from "@/components/HexagonGrid";
 import { HeroVisual } from "./HeroVisual";
+import { LiquidLinkButton } from "@/components/ui/liquid-link-button";
+import { ArrowRight } from "lucide-react";
 
 export function Hero() {
   const headlineRef = useRef<HTMLHeadingElement>(null);
@@ -63,12 +65,10 @@ export function Hero() {
             harga masuk akal, dan tanpa istilah teknis yang membingungkan.
           </p>
           <div ref={ctaRef} className="mt-8 flex flex-wrap gap-4">
-            <Link
-              href="/contact"
-              className="rounded-full bg-blue-500 hover:bg-blue-400 transition-colors px-6 py-3 font-semibold"
-            >
+            <LiquidLinkButton href="/contact">
               Konsultasi Gratis
-            </Link>
+              <ArrowRight className="size-4" aria-hidden="true" />
+            </LiquidLinkButton>
             <Link
               href="/projects"
               className="rounded-full border border-navy-600 hover:border-blue-400 transition-colors px-6 py-3 font-semibold"

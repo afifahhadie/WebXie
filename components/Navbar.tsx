@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { LiquidLinkButton } from "@/components/ui/liquid-link-button";
 
 const LINKS = [
   { href: "/", label: "Home" },
@@ -53,12 +54,11 @@ export function Navbar() {
           ))}
         </ul>
 
-        <Link
-          href="/contact"
-          className="hidden md:inline-flex items-center rounded-full bg-blue-500 hover:bg-blue-400 transition-colors px-5 py-2 text-sm font-semibold text-ivory"
-        >
-          Konsultasi Gratis
-        </Link>
+        <div className="hidden md:block">
+          <LiquidLinkButton href="/contact" className="h-10 px-5">
+            Konsultasi Gratis
+          </LiquidLinkButton>
+        </div>
 
         <button
           className="md:hidden text-ivory"
@@ -91,13 +91,13 @@ export function Navbar() {
               </li>
             ))}
             <li>
-              <Link
+              <LiquidLinkButton
                 href="/contact"
-                className="inline-flex items-center rounded-full bg-blue-500 px-5 py-2 text-sm font-semibold text-ivory"
+                className="h-10 px-5"
                 onClick={() => setOpen(false)}
               >
                 Konsultasi Gratis
-              </Link>
+              </LiquidLinkButton>
             </li>
           </ul>
         </div>
