@@ -40,9 +40,9 @@ export function Hero() {
   const headline = "Website Profesional untuk UMKM Naik Kelas";
 
   return (
-    <section className="relative overflow-hidden">
+    <section className="relative overflow-hidden min-h-[calc(100vh-5rem)] flex items-center">
       <HexagonGrid />
-      <div className="relative mx-auto max-w-6xl px-6 py-20 md:py-28 grid md:grid-cols-2 gap-12 items-center">
+      <div className="relative mx-auto max-w-6xl px-6 py-16 grid md:grid-cols-2 gap-12 items-center">
         <div>
           <p className="text-blue-300 text-sm font-semibold tracking-wide uppercase mb-4">
             Innovative Web Solutions

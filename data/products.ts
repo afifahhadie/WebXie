@@ -62,6 +62,33 @@ export const PRODUCTS: Product[] = [
       "https://cfcdn.my.id/products/02-08-2026/1785659020290_4600646.webp",
     link: "https://lynk.id/webxie_id/llg6q1q364xr",
   },
+  {
+    slug: "analisis-menu-paling-untung-laris",
+    name: "AI Tool - Analisis Menu Paling Untung & Paling Laris untuk Bisnis Kuliner",
+    price: "Rp66.000",
+    originalPrice: "Rp280.000",
+    image:
+      "https://cfcdn.my.id/products/08-08-2026/1786122256565_5323714.webp",
+    link: "https://lynk.id/webxie_id/7yp58183lrk7",
+  },
+  {
+    slug: "pembuat-laporan-operasional-harian",
+    name: "AI Tool - Pembuat Laporan Operasional Harian untuk Bisnis Kuliner",
+    price: "Rp45.000",
+    originalPrice: "Rp210.000",
+    image:
+      "https://cfcdn.my.id/products/08-08-2026/1786124031244_6900082.webp",
+    link: "https://lynk.id/webxie_id/j4nrjqkj5qzn",
+  },
+  {
+    slug: "membandingkan-memilih-supplier-terbaik",
+    name: "AI Tool - Membandingkan & Memilih Supplier Terbaik (UMKM)",
+    price: "Rp44.000",
+    originalPrice: "Rp210.000",
+    image:
+      "https://cfcdn.my.id/products/08-08-2026/1786156196235_5250761.webp",
+    link: "https://lynk.id/webxie_id/xxjp5ngp1n70",
+  },
 ];
 
 export const PRODUCTS_STORE_LINK = "https://lynk.id/webxie_id";
