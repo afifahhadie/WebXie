@@ -97,8 +97,8 @@ SkillIcon.displayName = 'SkillIcon';
 const skillsConfig: SkillConfig[] = [
   { 
     id: 'html',
-    orbitRadius: 100, 
-    size: 40, 
+    orbitRadius: 80, 
+    size: 36, 
     speed: 1, 
     iconType: 'html', 
     phaseShift: 0, 
@@ -107,8 +107,8 @@ const skillsConfig: SkillConfig[] = [
   },
   { 
     id: 'css',
-    orbitRadius: 100, 
-    size: 45, 
+    orbitRadius: 80, 
+    size: 40, 
     speed: 1, 
     iconType: 'css', 
     phaseShift: (2 * Math.PI) / 3, 
@@ -117,8 +117,8 @@ const skillsConfig: SkillConfig[] = [
   },
   { 
     id: 'javascript',
-    orbitRadius: 100, 
-    size: 40, 
+    orbitRadius: 80, 
+    size: 36, 
     speed: 1, 
     iconType: 'javascript', 
     phaseShift: (4 * Math.PI) / 3, 
@@ -127,8 +127,8 @@ const skillsConfig: SkillConfig[] = [
   },
   { 
     id: 'react',
-    orbitRadius: 180, 
-    size: 50, 
+    orbitRadius: 140, 
+    size: 44, 
     speed: -0.6, 
     iconType: 'react', 
     phaseShift: 0, 
@@ -137,8 +137,8 @@ const skillsConfig: SkillConfig[] = [
   },
   { 
     id: 'node',
-    orbitRadius: 180, 
-    size: 45, 
+    orbitRadius: 140, 
+    size: 40, 
     speed: -0.6, 
     iconType: 'node', 
     phaseShift: (2 * Math.PI) / 3, 
@@ -147,8 +147,8 @@ const skillsConfig: SkillConfig[] = [
   },
   { 
     id: 'tailwind',
-    orbitRadius: 180, 
-    size: 40, 
+    orbitRadius: 140, 
+    size: 36, 
     speed: -0.6, 
     iconType: 'tailwind', 
     phaseShift: (4 * Math.PI) / 3, 
@@ -271,24 +271,22 @@ export default function OrbitingSkills() {
   }, [isPaused]);
 
   const orbitConfigs: Array<{ radius: number; glowColor: GlowColor; delay: number }> = [
-    { radius: 100, glowColor: 'cyan', delay: 0 },
-    { radius: 180, glowColor: 'purple', delay: 1.5 }
+    { radius: 80, glowColor: 'cyan', delay: 0 },
+    { radius: 140, glowColor: 'purple', delay: 1.5 }
   ];
 
   return (
-    <main className="w-full flex items-center justify-center overflow-hidden">
-      <div className="absolute inset-0 opacity-10">
-        <div 
-          className="absolute inset-0" 
-          style={{
-            backgroundImage: `radial-gradient(circle at 25% 25%, #374151 0%, transparent 50%),
-                             radial-gradient(circle at 75% 75%, #4B5563 0%, transparent 50%)`,
-          }}
-        />
-      </div>
-
+    <div className="w-full h-full flex items-center justify-center overflow-hidden">
       <div 
-        className="relative w-[calc(100vw-40px)] h-[calc(100vw-40px)] md:w-[450px] md:h-[450px] flex items-center justify-center"
+        className="relative flex items-center justify-center"
+        style={{
+          width: '100%',
+          height: '100%',
+          maxWidth: '450px',
+          maxHeight: '450px',
+          aspectRatio: '1',
+          margin: '0 auto',
+        }}
         onMouseEnter={() => setIsPaused(true)}
         onMouseLeave={() => setIsPaused(false)}
       >
@@ -330,6 +328,6 @@ export default function OrbitingSkills() {
           );
         })}
       </div>
-    </main>
+    </div>
   );
 }
