@@ -77,10 +77,12 @@ export default function ProjectsPage() {
                           ))}
                         </ul>
                       </div>
-                      <div>
-                        <p className="font-semibold text-blue-300">Catatan Scope</p>
-                        <p className="mt-1 text-ivory-dim">{p.techDetail.scope}</p>
-                      </div>
+                      {p.techDetail.scope && (
+                        <div>
+                          <p className="font-semibold text-blue-300">Catatan Scope</p>
+                          <p className="mt-1 text-ivory-dim">{p.techDetail.scope}</p>
+                        </div>
+                      )}
                     </div>
                   )}
 
