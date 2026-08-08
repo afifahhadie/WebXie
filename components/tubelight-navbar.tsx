@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { 
   Home, 
@@ -54,22 +55,22 @@ const NAV_ITEMS = [
 ];
 
 export function TubelightNavbar() {
+  const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+
+  // Get active index based on current pathname
+  const activeIndex = NAV_ITEMS.findIndex(item => item.href === pathname);
+  
+  // Use hovered index if hovering, otherwise use active index
+  const displayIndex = hoveredIndex !== null ? hoveredIndex : activeIndex;
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-
-  // Handle route change to update active index
-  useEffect(() => {
-    const pathname = window.location.pathname;
-    const index = NAV_ITEMS.findIndex(item => item.href === pathname);
-    if (index !== -1) setActiveIndex(index);
   }, []);
 
   return (
@@ -100,13 +101,12 @@ export function TubelightNavbar() {
               layoutId="tubelight-indicator"
               className="absolute -z-10 rounded-xl bg-gradient-to-r from-blue-500/20 via-blue-400/40 to-blue-300/20 
                        shadow-lg shadow-blue-500/20 border border-blue-400/30 backdrop-blur-sm"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
               transition={{ type: "spring", stiffness: 300, damping: 30 }}
               style={{ 
                 width: `${100 / NAV_ITEMS.length}%`,
                 height: "calc(100% - 8px)",
                 margin: "4px",
+                transform: `translateX(${displayIndex * 100}%)`,
               }}
             />
 
@@ -125,12 +125,8 @@ export function TubelightNavbar() {
                       ? "text-ivory"
                       : "text-ivory-dim hover:text-ivory"
                   }`}
-                  onClick={() => setActiveIndex(index)}
-                  onMouseEnter={() => {
-                    if (window.innerWidth >= 768) {
-                      setActiveIndex(index);
-                    }
-                  }}
+                  onMouseEnter={() => setHoveredIndex(index)}
+                  onMouseLeave={() => setHoveredIndex(null)}
                 >
                   <item.desktopIcon className="w-4 h-4" />
                   <span>{item.label}</span>
@@ -179,7 +175,7 @@ export function TubelightNavbar() {
               className="md:hidden fixed inset-x-0 top-20 bg-navy-950/95 backdrop-blur-xl border-b border-navy-700 px-6 py-6"
             >
               <div className="space-y-4">
-                {NAV_ITEMS.map((item) => (
+                {NAV_ITEMS.map((item, index) => (
                   <motion.div
                     key={item.href}
                     initial={{ opacity: 0, x: -10 }}
@@ -188,7 +184,11 @@ export function TubelightNavbar() {
                   >
                     <Link
                       href={item.href}
-                      className="flex items-center gap-3 py-3 text-ivory-dim hover:text-ivory"
+                      className={`flex items-center gap-3 py-3 transition-colors ${
+                        activeIndex === index
+                          ? "text-ivory"
+                          : "text-ivory-dim hover:text-ivory"
+                      }`}
                       onClick={() => setOpen(false)}
                     >
                       <item.icon className="w-5 h-5" />
