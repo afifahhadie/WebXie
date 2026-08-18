@@ -10,7 +10,7 @@ export interface Product {
 export const PRODUCTS: Product[] = [
   {
     slug: "daily-purchasing-planner",
-    name: "AI Tool - Perencana Belanja Harian untuk Bisnis Kuliner",
+    name: "Capek Belanja Harian Kuliner Ngasal? Rencanain dalam 2 Menit, Auto Hemat",
     price: "Rp69.000",
     originalPrice: "Rp290.000",
     image:
@@ -19,7 +19,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "penghitung-kerugian-bahan-makanan",
-    name: "AI Tool - Penghitung Kerugian Bahan Makanan Yang Terbungan",
+    name: "Kamu Rugi Berapa Juta Sebulan Gara-gara Bahan Terbuang? Cek di Sini",
     price: "Rp55.000",
     originalPrice: "Rp200.000",
     image:
@@ -28,7 +28,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "hitung-hpp-food-cost",
-    name: "AI Tool - Hitung HPP & Food Cost untuk Bisnis Kuliner",
+    name: "Jualan Ramai tapi Untung Tipis? Mungkin Selama Ini Kamu Salah Hitung Food Cost, Ini Cara Benerinnya",
     price: "Rp64.000",
     originalPrice: "Rp270.000",
     image:
@@ -37,7 +37,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "perencana-persiapan-bahan",
-    name: "AI Tool - Perencana Persiapan Bahan untuk Bisnis Kuliner",
+    name: "Kekurangan Bahan Pas Rame, Kelebihan Bahan Pas Sepi? Atur Persiapan Bahan dengan Tepat",
     price: "Rp49.000",
     originalPrice: "Rp240.000",
     image:
@@ -46,7 +46,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "pembuat-laporan-operasional-harian",
-    name: "AI Tool - Pembuat Laporan Operasional Harian untuk Bisnis Kuliner",
+    name: "Capek Bikin Laporan Harian Manual? Otomatis Jadi dalam Hitungan Menit",
     price: "Rp45.000",
     originalPrice: "Rp210.000",
     image:
@@ -55,7 +55,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "analisis-menu-paling-untung-laris",
-    name: "AI Tool - Analisis Menu Paling Untung & Paling Laris untuk Bisnis Kuliner",
+    name: "Menu Best Seller Kamu Belum Tentu yang Paling Untung, Ini Cara Ceknya",
     price: "Rp66.000",
     originalPrice: "Rp280.000",
     image:
@@ -64,7 +64,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "hitung-harga-jual-margin",
-    name: "AI Tool - Hitung Harga Jual & Margin Keuntungan (UMKM)",
+    name: "Jangan Asal Kasih Harga, Cek Dulu Margin Kamu Beneran Untung atau Buntung",
     price: "Rp49.000",
     originalPrice: "Rp235.000",
     image:
@@ -73,7 +73,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "membandingkan-memilih-supplier-terbaik",
-    name: "AI Tool - Membandingkan & Memilih Supplier Terbaik (UMKM)",
+    name: "Supplier Kamu Termahal atau Termurah? Bandingkan dalam 3 Menit Tanpa Ribet, Dapat Hasil Maksimal",
     price: "Rp58.000",
     originalPrice: "Rp210.000",
     image:
@@ -82,7 +82,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "analisis-penjualan-harian",
-    name: "AI Tool - Analisis Penjualan Harian (UMKM)",
+    name: "Omzet Naik Turun tapi Nggak Tahu Sebabnya? Ini Cara Baca Datanya",
     price: "Rp57.000",
     originalPrice: "Rp247.000",
     image:
@@ -91,7 +91,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "hitung-restock-produk-online-shop",
-    name: "AI Tool - Hitung Kapan Restock dan Jumlah Pembelian Produk Online Shop",
+    name: "Bingung Kapan & Berapa Banyak Harus Restock? Hitung Otomatis di Sini",
     price: "Rp49.000",
     originalPrice: "Rp189.000",
     image:
@@ -100,7 +100,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "hitung-keuntungan-bersih-produk-online-shop",
-    name: "AI Tool - Hitung Keuntungan Bersih Produk Online Shop",
+    name: "Omzet Gede Tapi Kok Untung Kerasa Kecil? Cek Keuntungan Bersih Kamu Di Sini",
     price: "Rp51.000",
     originalPrice: "Rp199.000",
     image:
@@ -109,7 +109,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "hitung-harga-jual-minimum-produk-online-shop",
-    name: "AI Tool - Hitung Harga Jual Minimum Produk Online Shop",
+    name: "Jangan Sampai Jual di Bawah Modal, Cek Harga Minimum Kamu Dulu",
     price: "Rp55.500",
     originalPrice: "Rp222.000",
     image:
