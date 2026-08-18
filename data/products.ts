@@ -73,7 +73,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "membandingkan-memilih-supplier-terbaik",
-    name: "Supplier Kamu Termahal atau Termurah? Bandingkan dalam 3 Menit Tanpa Ribet, Dapat Hasil Maksimal",
+    name: "Supplier Kamu Termahal atau Termurah? Bandingkan dalam 3 Menit Tanpa Ribet, Auto Hasil Maksimal",
     price: "Rp58.000",
     originalPrice: "Rp210.000",
     image:
