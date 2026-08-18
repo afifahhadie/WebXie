@@ -23,8 +23,9 @@ export default function ProductsPage() {
             AI Micro-Tools Solusi Bisnis UMKM Indonesia
           </h1>
           <p className="mt-4 text-ivory-dim max-w-2xl mx-auto">
-            Produk digital siap pakai langsung melalui browser, praktis,
-            terjangkau, dan langsung membantu operasional bisnis Anda.
+            Produk digital siap pakai langsung melalui browser, terjangkau,
+            cukup sekali beli tanpa berlangganan, dan langsung membantu
+            operasional bisnis Anda.
           </p>
         </div>
       </section>

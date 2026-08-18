@@ -10,12 +10,21 @@ export interface Product {
 export const PRODUCTS: Product[] = [
   {
     slug: "daily-purchasing-planner",
-    name: "AI Tool - Daily Purchasing Planner untuk Bisnis Kuliner",
+    name: "AI Tool - Perencana Belanja Harian untuk Bisnis Kuliner",
     price: "Rp69.000",
     originalPrice: "Rp290.000",
     image:
       "https://cfcdn.my.id/products/02-08-2026/1785648953547_1378790.webp",
     link: "https://lynk.id/webxie_id/mgp903487xrz",
+  },
+  {
+    slug: "penghitung-kerugian-bahan-makanan",
+    name: "AI Tool - Penghitung Kerugian Bahan Makanan Yang Terbungan",
+    price: "Rp55.000",
+    originalPrice: "Rp200.000",
+    image:
+      "https://cfcdn.my.id/products/02-08-2026/1785659020290_4600646.webp",
+    link: "https://lynk.id/webxie_id/llg6q1q364xr",
   },
   {
     slug: "hitung-hpp-food-cost",
@@ -43,15 +52,6 @@ export const PRODUCTS: Product[] = [
     image:
       "https://cfcdn.my.id/products/08-08-2026/1786124031244_6900082.webp",
     link: "https://lynk.id/webxie_id/j4nrjqkj5qzn",
-  },
-  {
-    slug: "penghitung-kerugian-bahan-makanan",
-    name: "AI Tool - Penghitung Kerugian Bahan Makanan Yang Terbungan",
-    price: "Rp55.000",
-    originalPrice: "Rp200.000",
-    image:
-      "https://cfcdn.my.id/products/02-08-2026/1785659020290_4600646.webp",
-    link: "https://lynk.id/webxie_id/llg6q1q364xr",
   },
   {
     slug: "analisis-menu-paling-untung-laris",
