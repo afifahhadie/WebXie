@@ -20,7 +20,7 @@ export default function ProductsPage() {
             Products
           </p>
           <h1 className="mt-3 font-display text-4xl font-bold">
-            AI Micro-Tools untuk Bisnis Kuliner & UMKM
+            AI Micro-Tools Solusi Bisnis UMKM Indonesia
           </h1>
           <p className="mt-4 text-ivory-dim max-w-2xl mx-auto">
             Produk digital siap pakai langsung melalui browser, praktis,
