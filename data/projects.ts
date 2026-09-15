@@ -8,7 +8,6 @@ export interface Project {
   screenshot: string;
   techDetail?: {
     flow: string;
-    validation: string;
     stack: string[];
     scope?: string;
   };
@@ -42,18 +41,15 @@ export const PROJECTS: Project[] = [
     industry: "Pet-tech / consumer, AI & Computer Vision",
     description:
       "Web app yang menganalisis foto pasir kucing (via Computer Vision) untuk memberi estimasi awal kondisi pH urine kucing, sebagai indikasi dini masalah saluran kemih atau ginjal.",
-    link: "https://felyhart-ph-detector-v2.vercel.app",
+    link: "https://felyhart.vercel.app/",
     screenshot: "/images/projects/felyhart-ph-detector.png",
     techDetail: {
       flow: "Halaman panduan foto → upload foto (kamera/galeri) → analisis warna via OpenCV, dicocokkan ke database 3 kategori pH (Asam/pink-kemerahan, Normal/ungu, Basa/biru-kehijauan) → halaman hasil (estimasi pH, kondisi, saran).",
-      validation:
-        "Validasi foto menggunakan Claude API (Haiku), yang akan menolak foto yang bukan pasir kucing.",
       stack: [
         "Next.js (Vercel)",
         "FastAPI + OpenCV (Render)",
         "PostgreSQL via Supabase",
         "Cloudflare R2 (storage foto)",
-        "Claude API Haiku (validasi foto)",
         "UptimeRobot (uptime backend)",
       ],
     },

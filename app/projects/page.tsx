@@ -61,10 +61,6 @@ export default function ProjectsPage() {
                         <p className="mt-1 text-ivory-dim">{p.techDetail.flow}</p>
                       </div>
                       <div>
-                        <p className="font-semibold text-blue-300">Validasi</p>
-                        <p className="mt-1 text-ivory-dim">{p.techDetail.validation}</p>
-                      </div>
-                      <div>
                         <p className="font-semibold text-blue-300">Tech Stack</p>
                         <ul className="mt-1 flex flex-wrap gap-2">
                           {p.techDetail.stack.map((t) => (
