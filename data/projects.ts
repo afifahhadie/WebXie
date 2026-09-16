@@ -54,4 +54,24 @@ export const PROJECTS: Project[] = [
       ],
     },
   },
+  {
+    slug: "a3-autorent",
+    name: "A3 Autorent",
+    category: "Sistem Custom",
+    industry: "Rental mobil harian (Bandung)",
+    description:
+      "Web app sewa mobil harian dengan katalog armada, filter ketersediaan per tanggal, keranjang, akun pelanggan, dan pembayaran online sehingga pelanggan bisa booking sendiri tanpa antre.",
+    link: "https://a3-autorent.vercel.app/",
+    screenshot: "/images/projects/a3-autorent.png",
+    techDetail: {
+      flow: "Katalog armada dengan filter tanggal sewa → pilih mobil dan opsi lepas kunci atau dengan sopir → keranjang dan login/daftar akun → pembayaran online → konfirmasi booking.",
+      stack: [
+        "Next.js (Vercel)",
+        "Autentikasi & database booking",
+        "Payment gateway online",
+        "WhatsApp CS",
+      ],
+      scope: "Katalog 9 unit kendaraan (city car sampai van 14 kursi), halaman Syarat & Ketentuan, dan halaman kontak.",
+    },
+  },
 ];
