@@ -6,6 +6,7 @@ export interface Project {
   description: string;
   link: string;
   screenshot: string;
+  hideOnHome?: boolean;
   techDetail?: {
     flow: string;
     stack: string[];
@@ -35,6 +36,17 @@ export const PROJECTS: Project[] = [
     screenshot: "/images/projects/area-tinggi-service.png",
   },
   {
+    slug: "a3-autorent",
+    name: "A3 Autorent",
+    category: "Sistem Custom",
+    industry: "Rental mobil harian (Bandung)",
+    description:
+      "Web app sewa mobil harian dengan katalog armada, filter ketersediaan per tanggal, keranjang, akun pelanggan, dan pembayaran online sehingga pelanggan bisa booking sendiri tanpa antre.",
+    link: "https://a3-autorent.vercel.app/",
+    screenshot: "/images/projects/a3-autorent.png",
+    hideOnHome: true,
+  },
+  {
     slug: "felyhart-ph-detector",
     name: "pH Detector Urine Kucing",
     category: "Sistem Custom",
@@ -53,15 +65,5 @@ export const PROJECTS: Project[] = [
         "UptimeRobot (uptime backend)",
       ],
     },
-  },
-  {
-    slug: "a3-autorent",
-    name: "A3 Autorent",
-    category: "Sistem Custom",
-    industry: "Rental mobil harian (Bandung)",
-    description:
-      "Web app sewa mobil harian dengan katalog armada, filter ketersediaan per tanggal, keranjang, akun pelanggan, dan pembayaran online sehingga pelanggan bisa booking sendiri tanpa antre.",
-    link: "https://a3-autorent.vercel.app/",
-    screenshot: "/images/projects/a3-autorent.png",
   },
 ];

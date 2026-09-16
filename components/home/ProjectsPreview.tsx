@@ -11,7 +11,7 @@ export function ProjectsPreview() {
           <h2 className="font-display text-3xl font-bold">Hasil Kerja Kami</h2>
         </ScrollReveal>
         <div className="mt-12 grid md:grid-cols-3 gap-8">
-          {PROJECTS.map((p, i) => (
+          {PROJECTS.filter((p) => !p.hideOnHome).map((p, i) => (
             <ScrollReveal key={p.slug} delay={i * 0.1}>
               <a
                 href={p.link}
